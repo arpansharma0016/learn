@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+    <!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing. -->
+    <!-- The HTML <form> element is used to create an HTML form for user input-->
+
+    <form>
+
+        <!-- The <input type="text"> defines a single-line input field for text input.
+        The <label> tag defines a label for many form elements.
+        The <label> element is useful for screen-reader users, because the screen-reader will read out 
+        loud the label when the user focus on the input element.
+        The <label> element also help users who have difficulty clicking on very small regions (such as 
+        radio buttons or checkboxes) - because when the user clicks the text within the <label> element, 
+        it toggles the radio button/checkbox.        
+        The for attribute of the <label> tag should be equal to the id attribute of the <input> element 
+        to bind them together. -->
+        
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <!-- The <input type="radio"> defines a radio button.
+        Radio buttons let a user select ONE of a limited number of choices. -->
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+
+        <!-- The <input type="checkbox"> defines a checkbox.
+        Checkboxes let a user select ZERO or MORE options of a limited number of choices. -->
+            
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+
+        <!-- The <textarea> tag defines a multi-line text input control.
+        The <textarea> element is often used in a form, to collect user inputs like comments or reviews.    
+        A text area can hold an unlimited number of characters, and the text renders in a fixed-width font 
+        (usually Courier).    
+        The size of a text area is specified by the cols and rows attributes (or with CSS). -->
+
+        <label for="review">Review</label><br>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea><br>
+
+        <!-- The <select> element is used to create a drop-down list.
+        The <select> element is most often used in a form, to collect user input. -->
+
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select><br>
+
+        <!-- The <input type="submit"> defines a button for submitting the form data to a form-handler.
+        The form-handler is typically a file on the server with a script for processing input data. -->
+
+        <input type="submit" value="Submit">
+        
+    </form>
+
+</body>
+</html>

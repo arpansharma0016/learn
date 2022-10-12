@@ -1,0 +1,54 @@
+<!-- 
+    
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value" 
+
+-->
+
+<!DOCTYPE html>
+
+<!-- The lang attribute of the <html> tag declares the language of the Web page -->
+<html lang="en">
+
+<body>
+
+<!-- The href attribute of <a> specifies the URL of the page the link goes to -->
+    <a href="https://fasal.co">Visit Fasal</a><br>
+
+<!-- The src attribute of <img> specifies the path to the image to be displayed -->
+    <img src="https://fasal.co/images/logo.png"><br>
+
+<!-- The width and height attributes of <img> provide size information for images -->
+    <img src="https://fasal.co/images/logo.png" width="500" height="600"><br>
+
+<!-- The alt attribute of <img> provides an alternate text for an image -->
+    <img src="https://fasal.co/images/logo.png" alt="Fasal Logo"><br>
+
+<!-- The style attribute is used to add styles to an element, such as color, font, size, and more -->
+    <p style="color:red;">This is a red paragraph.</p><br>
+
+<!-- The title attribute defines some extra information about an element -->
+    <p title="I'm a tooltip">This is a paragraph.</p><br>
+
+<!-- The <picture> tag gives web developers more flexibility in specifying image resources.
+The most common use of the <picture> element will be for art direction in responsive designs. 
+Instead of having one image that is scaled up or down based on the viewport width, multiple images can be 
+designed to more nicely fill the browser viewport.
+The <picture> element contains two tags: one or more <source> tags and one <img> tag.
+The browser will look for the first <source> element where the media query matches the current viewport width, 
+and then it will display the proper image (specified in the srcset attribute). The <img> element is required as 
+the last child of the <picture> element, as a fallback option if none of the source tags matches.
+Tip: The <picture> element works "similar" to <video> and <audio>. You set up different sources, and the 
+first source that fits the preferences is the one being used. -->
+
+    <picture>
+        <source media="(min-width:650px)" srcset="https://www.w3schools.com/tags/img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="https://www.w3schools.com/tags/img_white_flower.jpg">
+        <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+
+</body>
+</html>
