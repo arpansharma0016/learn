@@ -25,6 +25,9 @@ Metadata typically define the document title, character set, styles, scripts, an
         <!-- The <link> element defines the relationship between the current document and an external resource. -->
         <link rel="stylesheet" href="styles.css">
 
+        <!-- To set an icon for the webpage -->
+        <link rel="icon" href="https://fasal.co/images/logo.png">
+
         <!-- The <meta> element is typically used to specify the character set, page description, keywords, 
         author of the document, and viewport settings. -->
 
@@ -56,6 +59,29 @@ Metadata typically define the document title, character set, styles, scripts, an
 
         <!-- The <base> element specifies the base URL and/or target for all relative URLs in a page. -->
         <base href="https://fasal.co/" target="_blank">
+
+
+        <!-- Open Graph meta tags are snippets of code that control how URLs are displayed when shared on social media.  -->
+        <!-- You can find them in the <head> section of a webpage. Any tags with og: before a property name are Open Graph tags. -->
+
+        <!-- og:title - The title of your page -->
+        <meta property="og:title" content="The title of the page" />
+
+        <!-- og:url - The URL of the content -->
+        <meta property="og:url" content="https://fasal.co/" />
+
+        <!-- og:image - The URL of an image for the social snippet -->
+        <meta property="og:image" content="https://fasal.co/images/logo.png">
+
+        <!-- og:title - The type of object you’re sharing. (e.g., article, website, etc.) -->
+        <meta property="og:type" content="article" />
+
+        <!-- og:description - A brief description of the content -->
+        <meta property="og:description" content="This is my learning for the Phase 1 of the roadmap for learning the technologies for Customer Engineering team" />
+
+        <!-- og:locale - Defines the content language -->
+        <meta property="og:locale" content="en_US" />
+
     </head>
 
     <body>
