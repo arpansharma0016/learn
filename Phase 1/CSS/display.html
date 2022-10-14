@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- The display property is the most important CSS property for controlling layout.
+        The display property specifies if/how an element is displayed.
+        Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline. -->
+        <style>
+            /* Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards. */
+            
+            /* A common example is making inline <li> elements for horizontal menus: */
+            li {
+            display: inline;
+            }
+
+            /* The following example displays <span> elements as block elements: */
+            span {
+            display: block;
+            }
+
+            /* Hiding an element can be done by setting the display property to none. 
+            The element will be hidden, and the page will be displayed as if the element is not there: */
+            h1.hidden {
+            display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <p>Display a list of links as a horizontal menu:</p>
+        <ul>
+            <li><a href="/html" target="_blank">HTML</a></li>
+            <li><a href="/css" target="_blank">CSS</a></li>
+            <li><a href="/js" target="_blank">JavaScript</a></li>
+        </ul>
+
+        <h1>Display span elements as block elements</h1>
+        <span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span elements.</span>
+
+        <h1>This is a visible heading</h1>
+        <h1 class="hidden">This is a hidden heading</h1>
+        <p>Notice that the h1 element with display: none; does not take up any space.</p>
+    </body>
+</html>
+
+

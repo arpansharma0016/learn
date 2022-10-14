@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    /* Create a flex container */
+    .flex-container1 {
+        display: flex;
+        background-color: DodgerBlue;
+    }
+    
+    /* The flex-direction property defines in which direction the container wants to stack the flex items. */
+    /* 
+        The column value stacks the flex items vertically (from top to bottom)
+        The column-reverse value stacks the flex items vertically (but from bottom to top)
+        The row value stacks the flex items horizontally (from left to right)
+        The row-reverse value stacks the flex items horizontally (but from right to left) 
+    */
+    .flex-container2 {
+        display: flex;
+        flex-direction: column;
+        background-color: DodgerBlue;
+    }
+
+    /* The flex-wrap property specifies whether the flex items should wrap or not. */
+    /* 
+        The wrap value specifies that the flex items will wrap if necessary
+        The nowrap value specifies that the flex items will not wrap (this is default)
+        The wrap-reverse value specifies that the flexible items will wrap if necessary, in reverse order
+    */
+    .flex-container3 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: DodgerBlue;
+    }
+
+    /* The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties */
+    .flex-container4 {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: DodgerBlue;
+    }
+
+    /* The justify-content property is used to align the flex items */
+    /* 
+        The center value aligns the flex items at the center of the container
+        The flex-start value aligns the flex items at the beginning of the container (this is default)
+        The flex-end value aligns the flex items at the end of the container
+        The space-around value displays the flex items with space before, between, and after the lines
+        The space-between value displays the flex items with space between the lines
+    */
+    .flex-container5 {
+        display: flex;
+        justify-content: center;
+        background-color: DodgerBlue;
+    }
+
+    /* The align-items property is used to align the flex items. */
+    /* 
+        The center value aligns the flex items in the middle of the container
+        The flex-start value aligns the flex items at the top of the container
+        The flex-end value aligns the flex items at the bottom of the container
+        The stretch value stretches the flex items to fill the container (this is default)
+        The baseline value aligns the flex items such as their baselines aligns
+    */
+    .flex-container6 {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        background-color: DodgerBlue;
+    }
+
+    /* The align-content property is used to align the flex lines */
+    /* 
+        The space-between value displays the flex lines with equal space between them
+        The space-around value displays the flex lines with space before, between, and after them
+        The stretch value stretches the flex lines to take up the remaining space (this is default)
+        The center value displays display the flex lines in the middle of the container
+        The flex-start value displays the flex lines at the start of the container
+        The flex-end value displays the flex lines at the end of the container
+    */
+    .flex-container7 {
+        display: flex;
+        height: 300px;
+        flex-wrap: wrap;
+        align-content: space-between;
+        overflow: scroll;
+        background-color: DodgerBlue;
+    }
+
+    .child {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+
+    /* Flex items properties */
+    .flex-container {
+        display: flex;
+        align-items: stretch;
+        background-color: #f1f1f1;
+    }
+
+    .flex-container>div {
+        background-color: DodgerBlue;
+        color: white;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Create a Flex Container</h1>
+    <div class="flex-container1">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>  
+    </div>
+
+    <h1>The flex-direction property defines in which direction the container wants to stack the flex items.</h1>
+    <div class="flex-container2">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>  
+    </div>
+
+    <h1>The flex-wrap property specifies whether the flex items should wrap or not.</h1>
+    <div class="flex-container3">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+        <div class="child">11</div>
+        <div class="child">12</div>  
+    </div>
+
+    <h1>The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties</h1>
+    <div class="flex-container4">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+        <div class="child">11</div>
+        <div class="child">12</div>  
+    </div>
+
+    <h1>The justify-content property is used to align the flex items</h1>
+    <div class="flex-container5">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>  
+    </div>
+
+    <h1>The align-items property is used to align the flex items.</h1>
+    <div class="flex-container6">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>  
+    </div>
+
+    <h1>The align-content property is used to align the flex lines</h1>
+    <div class="flex-container7">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        <div class="child">10</div>
+    </div>
+
+
+    <hr>
+    <h1>Flex item properties</h1>
+    
+    <h1>The order Property</h1>
+    <p>Use the order property to sort the flex items as you like</p>
+    <div class="flex-container">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div> 
+        <div style="order: 1">4</div>
+    </div>
+
+    <p>The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-shrink: 0">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+
+    <p>The flex-basis property specifies the initial length of a flex item.</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex-basis: 200px">3</div>
+        <div>4</div>
+    </div>
+
+    <p>The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 0 0 200px">3</div>
+        <div>4</div>
+    </div>
+
+    <p>The align-self property specifies the alignment for the selected item inside the flexible container.
+        The align-self property overrides the default alignment set by the container's align-items property.</p>
+    <div class="flex-container" style="height: 200px;">
+        <div>1</div>
+        <div>2</div>
+        <div style="align-self: center">3</div>
+        <div>4</div>
+    </div>
+
+    <p>The "align-self: flex-start;" aligns the selected flex item at the top of the container.</p>
+    <p>The "align-self: flex-end;" aligns the selected flex item at the bottom of the container.</p>
+
+    <div class="flex-container" style="height: 200px;">
+        <div>1</div>
+        <div style="align-self: flex-start">2</div>
+        <div style="align-self: flex-end">3</div>
+        <div>4</div>
+    </div>
+
+</body>
+</html>
+
+

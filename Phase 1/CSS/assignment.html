@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <title>CSS Assignment</title>
+    <style>
+        * {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        body {
+            padding: 0px 80px 0px 80px;
+            background-color: #e6e7e8;
+        }
+
+
+        .nav-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav {
+            padding: 10px;
+        }
+
+        .nav-item {
+            margin: 10px;
+        }
+
+        .main-hr {
+            height: 0px;
+            border: none;
+            border-top: 3px solid black;
+        }
+
+        .main-article-section {
+            display: flex;
+        }
+
+        .main-article {
+            width: 50%;
+        }
+
+        .main-img {
+            width: 100%;
+            max-height: auto;
+        }
+
+        .next-article-space {
+            width: 50%;
+            margin-left: 20px;
+        }
+
+        .next-article {
+            display: flex;
+        }
+
+        .article-img {
+            width: 40%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        article {
+            margin: 20px 20px 20px 0px;
+        }
+
+        .cards-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 25%;
+            margin: 20px 20px 20px 20px;
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .nav-icons {
+            margin: 0px 10px 0px 10px;
+        }
+
+        .small-nav {
+                display: none;
+            }
+
+        .small-nav-items {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 20px 0px 20px;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            body {
+                padding: 0px 40px 0px 40px;
+            }
+
+            .main-article-section {
+                display: block;
+            }
+
+            .main-article {
+                width: 100%;
+            }
+
+            .next-article {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+
+            .next-article-space {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            .cards-section {
+                width: 100%;
+            }
+
+            .article {
+                margin-right: 0px;
+            }
+
+            .article-img {
+                margin-right: 0px;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width: 600px) {
+            * {
+                font-size: medium;
+            }
+
+            .heading {
+                font-size: x-large;
+            }
+
+            body {
+                padding: 10px;
+            }
+
+            .card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .nav-section {
+                display: none;
+            }
+
+            .small-nav {
+                display: block;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <section class="nav-section">
+        <nav class="nav">
+            <a class="nav-item"><img src="https://fasal.co/images/logo.png" height="30px" width="30px"></a>
+            <a class="nav-item">Home</a>
+            <a class="nav-item">About</a>
+            <a class="nav-item">Contact</a>
+        </nav>
+        <nav class="nav" style="margin-top: 10px;">
+            <i class="fa-brands fa-twitter nav-icons"></i>
+            <i class="fa-brands fa-instagram nav-icons"></i>
+            <i class="fa-solid fa-user nav-icons"></i>
+            <i class="fa-brands fa-medium nav-icons"></i>
+        </nav>
+    </section>
+
+    <section class="small-nav">
+        <nav class="small-nav-items">
+            <a class="nav-item"><img src="https://fasal.co/images/logo.png" height="30px" width="30px" style="margin-bottom: 0px;"></a>
+            <i class="fa-solid fa-bars" style="margin-top: 20px;"></i>
+        </nav>
+    </section>
+
+    <hr class="main-hr">
+
+    <h1 class="heading">Featured Article</h1>
+    <section class="main-article-section">
+        <article class="main-article">
+            <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg" class="main-img">
+            <small>6th November 2000</small>
+            <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <br>
+        </article>
+
+        <div class="next-article-space">
+            <article class="next-article">
+                <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="article-img">
+                <div class="article-data">
+                    <small>6th November 2000</small>
+                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                </div>
+            </article>
+            <hr>
+            <article class="next-article">
+                <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="article-img">
+                <div class="article-data">
+                    <small>6th November 2000</small>
+                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                </div>
+            </article>
+            <hr>
+            <article class="next-article">
+                <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="article-img">
+                <div class="article-data">
+                    <small>6th November 2000</small>
+                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <hr class="main-hr">
+
+    <h1 class="heading">Article Terbaru</h1>
+    <section class="cards-section">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="card-img">
+            <div class="card-data">
+                <small>6th November 2000</small>
+                <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="card-img">
+            <div class="card-data">
+                <small>6th November 2000</small>
+                <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="card-img">
+            <div class="card-data">
+                <small>6th November 2000</small>
+                <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="card-img">
+            <div class="card-data">
+                <small>6th November 2000</small>
+                <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="card-img">
+            <div class="card-data">
+                <small>6th November 2000</small>
+                <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/870711/pexels-photo-870711.jpeg" class="card-img">
+            <div class="card-data">
+                <small>6th November 2000</small>
+                <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
