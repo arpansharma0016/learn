@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to 
+        design web pages without having to use floats and positioning. */
+        .grid-container {
+            display: grid;
+
+            /* The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column. */
+            grid-template-columns: auto auto auto;
+            /* grid-template-columns: 80px 200px auto 40px; */
+
+            /* The grid-template-rows property defines the height of each row. */
+            grid-template-rows: 80px 200px;
+
+            /* The justify-content property is used to align the whole grid inside the container. */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: end; */
+
+            /* The align-content property is used to vertically align the whole grid inside the container. */
+            /* align-content: center; */
+            /* align-content: space-evenly; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: start; */
+            /* align-content: end; */
+
+
+
+            background-color: #2196F3;
+            padding: 10px;
+
+            /* The column-gap property sets the gap between the columns:
+            column-gap: 50px; */
+
+            /* The row-gap property sets the gap between the rows:
+            row-gap: 50px; */
+
+            /* The gap property is a shorthand property for the row-gap and the column-gap properties:
+            gap: 50px 100px; */
+
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+
+            /* Place a grid item at column line 1, and let it end on column line 3:
+            grid-column-start: 1;
+            grid-column-end: 3; */
+
+            /* Place a grid item at row line 1, and let it end on row line 3:
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* The grid-column property defines on which column(s) to place an item. */
+            /* Make "item1" start on column 1 and end before column 5:
+            grid-column: 1 / 5; */
+
+            /* Make "item1" start on column 1 and span 3 columns:
+            grid-column: 1 / span 3; */
+
+            /* The grid-row property defines on which row to place an item. */
+            /* Make "item1" start on row-line 1 and end on row-line 4:
+            grid-row: 1 / 4; */
+
+            /* Make "item1" start on row 1 and span 2 rows:
+            grid-row: 1 / span 2; */
+
+            /* The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties. */
+            /* Make "item1" start on row-line 1 and column-line 2, and end on row-line 5 and column line 6:
+            grid-area: 1 / 2 / 5 / 6; */
+
+            /* Make "item1" start on row-line 2 and column-line 1, and span 2 rows and 3 columns:
+            grid-area: 2 / 1 / span 2 / span 3; */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grid Elements</h1>
+
+    <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+    </div>
+
+</body>
+</html>
+
+
